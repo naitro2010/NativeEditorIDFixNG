@@ -58,7 +58,7 @@ namespace plugin {
         logger::info("onLoad()");
         Hooks::install();
         if (REL::Module::IsVR()) {
-            EditorIdLookupTables.reserve(0x100);
+            EditorIdLookupTables.resize(0x100);
             OriginalGetEditorID = REL::Offset(0x107430).address();
             OriginalSetEditorID = REL::Offset(0x107890).address();
             auto OriginalNodeStringAddr = REL::Offset(0x15bcc88).address();
