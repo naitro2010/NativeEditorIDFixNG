@@ -1,5 +1,6 @@
 #include "GameEventHandler.h"
 #include "Hooks.h"
+#include <detours/detours.h>
 #pragma warning(disable : 4091)
 #pragma warning(disable : 4189)
 namespace plugin {
