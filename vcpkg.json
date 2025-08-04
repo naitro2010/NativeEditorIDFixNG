@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
-  "name": "skse-clibng-template",
+  "name": "nativeeditoridfixng",
   "version-string": "0.0.5",
-  "description": "SKSE CommonLibSSE-NG Template",
-  "homepage": "https://github.com/epinter/skse-clibng-template",
+  "description": "NativeEditorIDFixNG",
+  "homepage": "https://github.com/naitro2010/NativeEditorIDFixNG",
   "features": {
     "plugin": {
       "description": "SKSE plugin",
