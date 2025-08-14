@@ -61,6 +61,8 @@ namespace plugin {
             EditorIdLookupTables.resize(0x100);
             OriginalGetEditorID = REL::Offset(0x107430).address();
             OriginalSetEditorID = REL::Offset(0x107890).address();
+            // commented out to keep full node names
+            /*
             auto OriginalNodeStringAddr = REL::Offset(0x15bcc88).address();
             auto OriginalNullStringAddr = REL::Offset(0x15965f0).address();
             auto StringPatchA0 = REL::Offset(0x1d8f49).address();
@@ -85,6 +87,7 @@ namespace plugin {
             uint8_t D0Data[] = {0x49, 0xb8, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x90, 0x90};
             memcpy(&D0Data[2], &OriginalNullStringAddr, 8);
             REL::safe_write(StringPatchD0, D0Data, sizeof(D0Data));
+            */
             DetourTransactionBegin();
             DetourUpdateThread(GetCurrentThread());
             DetourAttach(&(PVOID&) OriginalGetEditorID, NewGetEditorID);
